@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillBook, AiFillGithub } from "react-icons/ai";
+// import SoftwareResume from '../../public/SoftwareResume.pdf'
 
 export default function Home() {
   return (
@@ -21,11 +22,11 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="S:\Software Engineer Resume.pdf"
-                  className="bg-gradient-to-r from-purple-500 ml-8 px-4 py-2 rounded-md"
-                >
-                  Resume
-                </a>
+                  href="https://www.linkedin.com/in/nick-wells-04b13a26a/overlay/1635529050977/single-media-viewer/?profileId=ACoAAEHfIrsBLnHh3uNU8YC0j93isazFkroM_gQ"
+                  target="_blank"
+                  className="bg-gradient-to-r from-purple-500 ml-10 px-4 py-2 rounded-md"
+                />
+                Resume
               </li>
             </ul>
           </nav>
@@ -53,7 +54,26 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
-          <div className="">{/* <Image src={}/> */}</div>
+          <div className="relative mx-auto bg-gradent-to-b from-purple-500 rounded-xl w-80 h-80 mt-15 py-8 overflow-hidden">
+            <img
+              src={
+                "https://media.licdn.com/dms/image/D5603AQHxUg_l7jMqMA/profile-displayphoto-shrink_800_800/0/1683868102053?e=1694044800&v=beta&t=8fELIwBTtVhdkoF4njbORkwlGqFefYTqJsQGZEob4cQ"
+              }
+            />
+          </div>
+        </section>
+        <section>
+          <div className="text-center">
+            <h3 className="text-3xl py-1 bg-gradient-to-r from-purple-500">
+              {" "}
+              Projects Portfolio{" "}
+            </h3>
+            <p className="text-md py-5 leading-8">
+              Since the beginning of my journey as a Software Engineer I have
+              worked on various projects..
+            </p>
+          </div>
+          <div></div>
         </section>
       </main>
     </div>
