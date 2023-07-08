@@ -22,14 +22,6 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill className="curso-pointer text-xl" />
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/nick-wells-04b13a26a/overlay/1635529050977/single-media-viewer/?profileId=ACoAAEHfIrsBLnHh3uNU8YC0j93isazFkroM_gQ"
-                  target="_blank"
-                  className="bg-gradient-to-r from-purple-500 ml-10 px-4 py-2 rounded-md"
-                />
-                Resume
-              </li>
             </ul>
           </nav>
           <div className="text-center p-12">
@@ -44,6 +36,13 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-14 py-3 text-gray-400">
             <a
+              href="https://www.linkedin.com/in/nick-wells-04b13a26a/overlay/1635529050977/single-media-viewer/?profileId=ACoAAEHfIrsBLnHh3uNU8YC0j93isazFkroM_gQ"
+              target="_blank"
+              className="bg-gradient-to-r from-purple-500 px-2 py-2 rounded-md hover:bg-sky-700"
+            >
+              Resume
+            </a>
+            <a
               href="https://www.linkedin.com/in/nick-wells-04b13a26a"
               target="_blank"
             >
@@ -51,6 +50,7 @@ export default function Home() {
             </a>
             <a href="https://medium.com/@wellsnick3" target="_blank">
               <AiFillBook />
+              
             </a>
             <a href="https://github.com/Risingsheild" target="_blank">
               <AiFillGithub />
@@ -73,7 +73,7 @@ export default function Home() {
           <br />
           <div className="text-center flex justify-center">
             <a href="https://youtu.be/Xi6-AG69Vsk" target="_blank">
-              <h3 className="text-xl py-6 px-5 mr-10 bg-gradient-to-r from-teal-300">
+              <h3 className="text-xl py-6 px-5 mr-10 bg-gradient-to-r from-teal-300 hover:bg-sky-700">
                 Pharmacy Scheduling Application
                 <p className="text-sm italic">click for video </p>
               </h3>
@@ -85,11 +85,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center gap-14 py-3">
-            <Image
-              src={ScreenShot}
-              alt="Pharmacy Application"
-              height={300}
-            />
+            <Image src={ScreenShot} alt="Pharmacy Application" height={300} />
           </div>
         </section>
       </main>
