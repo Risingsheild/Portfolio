@@ -2,7 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillBook, AiFillGithub } from "react-icons/ai";
-// import SoftwareResume from '../../public/SoftwareResume.pdf'
+import Avatar from "../../public/Avatar.png";
+// import SoftwareEngineer from '../../public/'
+import ScreenShot from "../../public/Screenshot 2023-04-24 181902.png";
 
 export default function Home() {
   return (
@@ -55,25 +57,40 @@ export default function Home() {
             </a>
           </div>
           <div className="relative mx-auto bg-gradent-to-b from-purple-500 rounded-xl w-80 h-80 mt-15 py-8 overflow-hidden">
-            <img
-              src={
-                "https://media.licdn.com/dms/image/D5603AQHxUg_l7jMqMA/profile-displayphoto-shrink_800_800/0/1683868102053?e=1694044800&v=beta&t=8fELIwBTtVhdkoF4njbORkwlGqFefYTqJsQGZEob4cQ"
-              }
-            />
+            <Image src={Avatar} alt="Personal photo" />
           </div>
         </section>
         <section>
           <div className="text-center">
             <h3 className="text-3xl py-1 bg-gradient-to-r from-purple-500">
-              {" "}
-              Projects Portfolio{" "}
+              Projects Portfolio
             </h3>
             <p className="text-md py-5 leading-8">
               Since the beginning of my journey as a Software Engineer I have
               worked on various projects..
             </p>
           </div>
-          <div></div>
+          <br />
+          <div className="text-center flex justify-center">
+            <a href="https://youtu.be/Xi6-AG69Vsk" target="_blank">
+              <h3 className="text-xl py-6 px-5 mr-10 bg-gradient-to-r from-teal-300">
+                Pharmacy Scheduling Application
+                <p className="text-sm italic">click for video </p>
+              </h3>
+            </a>
+            <p className="text-md py-4 leading-8">
+              This is a full Stack Appilcation, The Frontend uses React
+              framework with a Redux State management system, while I use Ruby
+              and PSQL as the Backend and Database.
+            </p>
+          </div>
+          <div className="flex justify-center gap-14 py-3">
+            <Image
+              src={ScreenShot}
+              alt="Pharmacy Application"
+              height={300}
+            />
+          </div>
         </section>
       </main>
     </div>
