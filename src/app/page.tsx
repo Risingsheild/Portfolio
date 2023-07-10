@@ -31,9 +31,10 @@ export default function Home() {
             </a>
             <h3 className="text-xl py-2"> Software Engineer and Developer</h3>
             <p className="text-md py-5 leading-8">
-              Software Engineer from Flatiron School, With a specialty in
-              JS/React and Ruby!
-            </p>
+              Graduate from Flatiron School</p>
+               <p>Specializes in
+              JS/React and Ruby</p>
+            
           </div>
           <div className="text-5xl flex justify-center gap-14 py-3 text-gray-400">
             <a
